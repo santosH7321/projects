@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Link css -->
     <link rel="stylesheet" href="./style.css">
-    <!-- Link fontAwasome Libraries-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <!-- Tital part -->
     <title>Portfolio website</title>
     <!-- Link Script -->
@@ -15,12 +14,90 @@
 <body>
     <!-- Header part -->
     <header class="header">
-        
+        <a href="#" class="logo">Portfolio</a>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#servises">Servises</a>
+            <a href="#portfoliio">Portfoliio</a>
+            <a href="#contact">Contact</a>
+
+
+        </nav>
+
+        <div class="bx bx-moon" id="darkmode-icon"></div>
+
+        <div class="dx bx-menu" id="menu-icon"></div>
 
     </header>
     <!-- Home part -->
     <section class="home" id="home">
+        <!-- Home content -->
+        <div class="home-content">
+            <h3>Hello, I am</h3>
+            <h1>Santosh kumar</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, alias! Quae adipisci reiciendis nihil, suscipit temporibus officia sequi? Quas, iusto!
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas modi minima earum est nihil voluptatum omnis sit, repudiandae illo quisquam?</p>
+            <!-- Social media -->
+            <div class="social-media">
 
+                <a href="#">
+                    <i class='bx bxl-linkedin'></i>
+                </a>
+
+                <a href="#">
+                    <i class='bx bxl-github'></i>
+                </a>
+
+                <a href="#">
+                    <i class='bx bxl-facebook'></i>
+                </a>
+
+                <a href="#">
+                    <i class='bx bxl-twitter'></i>
+                </a>
+                
+            </div>
+
+            <a href="#" class="btn">Download CV</a>
+
+        </div>
+        <!-- profession container -->
+        <div class="profession-container">
+            <div class="profession-box">
+                <!-- Web devloper -->
+                <div class="profession" style="--i:0">
+                    <i class='bx bx-code-alt'></i>
+                    <h3>Web Devloper</h3>
+                </div>
+
+                <!-- Competative programming -->
+                <div class="profession" style="--i:1">
+                    <i class='bx bx-code'></i>
+                    <h3>Coder</h3>
+                </div>
+                <!-- Web desiner -->
+                <div class="profession" style="--i:2">
+                    <i class='bx bx-palette'></i>
+                    <h3>Web Desiner</h3>
+                </div>
+
+                <!-- photographer -->
+                <div class="profession" style="--i:3">
+                    <i class='bx bx-camera'></i>
+                    <h3>Photographar</h3>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="oveerlay">
+
+        </div>
 
     </section>
 
@@ -59,5 +136,15 @@
     <footer class="footter">
 
     </footer>
+
+
+
+
+
+
+
+
+    <!-- Link icon Libraries-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/dist/boxicons.js" integrity="sha512-Dm5UxqUSgNd93XG7eseoOrScyM1BVs65GrwmavP0D0DujOA8mjiBfyj71wmI2VQZKnnZQsSWWsxDKNiQIqk8sQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>
