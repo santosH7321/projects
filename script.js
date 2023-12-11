@@ -9,7 +9,7 @@ menuIcon.onclick = () => {
 
 let sections = document.querySelectorAll("section");
 
-let navlinks = document.querySelectorAll("header nav a");
+let navLinks = document.querySelectorAll("header nav a");
 
 window.onscroll=() => {
     sections.forEach(sec=>{
@@ -19,7 +19,7 @@ window.onscroll=() => {
         let id= sec.getAttribute('id');
 
         if(top>=offset &&top<offset+offsetHeight){
-            navlinks.forEach(links=>{
+            navLinks.forEach(links=>{
                 links.classList.remove("active");
                 document.querySelector('header nav a[href=' + id + ']').classList.add("active");
 
@@ -49,6 +49,8 @@ var swiper = new Swiper(".mySwiper", {
       prevEl: ".swiper-button-prev",
     },
   });
+
+  
 
 
 let darkmodeIcon = document.querySelector("#darkmode-icon");
