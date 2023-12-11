@@ -442,15 +442,18 @@ span{
     color: #333;
 }
 
-.tastimonial-container{
+.testimonial-container{
     display: flex;
     align-items: center;
     flex-direction: column;
     width: 100%;
     padding: 5rem 1rem;
 }
+.testimonial-container{
+    font-size: 3rem;
+}
 
-.testimonial-container .testimonial-wrapper{
+.tastimonial-container .testimonial-wrapper{
     position: relative;
     max-width: 90rem;
     width: 100%;
