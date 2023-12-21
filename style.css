@@ -287,6 +287,7 @@ span{
     width: 40vw;
 }
 
+
 .heading{
     font-size: 4.5rem;
     text-align: center;
@@ -453,7 +454,7 @@ span{
     font-size: 3rem;
 }
 
-.tastimonial-container .testimonial-wrapper{
+.testimonial-container .testimonial-wrapper{
     position: relative;
     max-width: 90rem;
     width: 100%;
