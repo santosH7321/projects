@@ -1,0 +1,73 @@
+@font-face {
+    font-family: nb;
+    src: url(./Nb.ttf);
+}
+
+@font-face {
+    font-family: rejoy;
+    src: url(./Rejo.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: nb;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+#page1{
+    height: 100vh;
+    width: 100%;
+    background-color: #dadada;
+    position: relative;
+}
+
+#page1 video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+#page1-content{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 3vw 3vw;
+}
+
+nav h3{
+    font-size: 1.4vw;
+}
+nav h4{
+    font-size: 1.4vw;
+    font-weight: 100;
+}
+
+#page1-content h1{
+   font-size: 27vw;
+   line-height: 20vw;
+   font-family: rejoy;
+   font-weight: 500;
+}
+#page1-content h1 span{
+   font-family: rejoy;
+}

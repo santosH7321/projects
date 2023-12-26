@@ -36,6 +36,7 @@ window.onscroll=() => {
 
 }
 
+// testimonial swiper
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
     spaceBetween: 50,
