@@ -19,8 +19,8 @@ page1Content.addEventListener("mouseenter",function(){
 })
 page1Content.addEventListener("mouseleave",function(){
     gsap.to(cursor, {
-        scale:0,
-        opacity:0
+        scale: 0,
+        opacity: 0
     })
 })
 }
