@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-section{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+   
+}
+.left-section img{
+    height: 300px;
+    width: 300px;
+    margin: 40px;
+}
+
+.mid-section{
+    display: flex;
+    flex-direction: column;
+}
+.mid-section button{
+    margin-top: 50px;
+}
+
+.right-section{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+   
+}
+.right-section img{
+    height: 300px;
+    width: 300px;
+    margin: 40px;
+}
+
