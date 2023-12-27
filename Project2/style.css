@@ -93,5 +93,20 @@ nav h4{
 #page2{
     height: 100vh;
     width: 100%;
-    background-color: beige;
+    background-color: #fff;
+    padding-top: 10vh;
+}
+
+#page2-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding-top: 10vh; */
+    color: black;
+    font-size: 25px;
+    padding: 10px;
+}
+#page2-main-content{
+    padding: 10vh; 
+    font-size: 50px;
 }
