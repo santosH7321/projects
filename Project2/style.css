@@ -176,3 +176,17 @@ nav h4{
 #page3-elements .box:hover img{
     opacity: 0;
 }
+
+#page4{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+#page4 video{
+    height: 100%;
+}
