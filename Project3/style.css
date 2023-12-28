@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     list-style: none;
+    text-decoration: none;
 }
 
 .head{
@@ -23,12 +24,13 @@
     border-radius: 10px;
 }
 
+
 .mid-section{
     display: flex;
     flex-direction: column;
 }
 .mid-section button{
-    margin-top: 50px;
+    margin-top: 20px;
 }
 .mid-section button{
     padding: 10px;
