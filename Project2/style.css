@@ -88,6 +88,7 @@ nav h4{
 }
 #page1-content h1 span{
    font-family: rejoy;
+   display: inline-block;
 }
 
 #page2{
@@ -239,6 +240,20 @@ nav h4{
   }
 
   #loader{
-    height: ;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #000;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    gap: 10px;
+  }
+  #loader h3{
+    font-size: 2vw;
+    font-weight: 2vw;
   }
  
