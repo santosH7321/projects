@@ -1,131 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Link css -->
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
     <!-- Link favicon -->
-    <link rel="shortcut icon" href="https://www.rejouice.com/assets/favicon/favicon-32x32.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="https://www.rejouice.com/assets/favicon/favicon-32x32.png"
+      type="image/x-icon"
+    />
     <!-- Locomotive css -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
+    <!-- Swiper css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
     <!-- Title -->
     <title>Home | REJOUICE®</title>
-</head>
-<body>
+  </head>
+  <body>
+    <div id="loader"></div>
     <div id="main">
-        <div id="page1">
-            <div id="cursor">
-                <h5>Play Reel</h5>
-            </div>
-            <video autoplay muted loop src="./assests/bg-v.mp4"></video>
-
-            <div id="page1-content">
-                <nav>
-                    <h3>The Venture Agency.</h3>
-                    <h4>Menu</h4>
-                </nav>
-
-                <h1>
-                    <span>r</span><span>e</span><span>j</span><span>o</span><span>u</span><span>i</span><span>c</span><span>e</span>
-                </h1>
-            </div>
+      <div id="page1">
+        <div id="cursor">
+          <h5>Play Reel</h5>
         </div>
+        <video autoplay muted loop src="./assests/bg-v.mp4"></video>
 
-        <div id="page2">
-            <div id="page2-content">
-                <p>Full-service agency.
-                    <br>
-                    Two engagement models.
-                </p>
+        <div id="page1-content">
+          <nav>
+            <h3>The Venture Agency.</h3>
+            <h4>Menu</h4>
+          </nav>
 
-                <p>
-                    Pairs & San Diego
-                </p>
-
-            </div>
-            <hr>
-            <div id="page2-main-content">
-                <p>
-                     We are a digital brand accelerator. We design, develop, and scale market-defining brands by unlocking their hidden potential. Choose full cash compensation or offset up to 50% of our fees for equity in your company. Your vision, your decision.
-                </p>
-            </div>
+          <h1>
+            <span>r</span><span>e</span><span>j</span><span>o</span
+            ><span>u</span><span>i</span><span>c</span><span>e</span>
+          </h1>
         </div>
+      </div>
 
-        <div id="page3">
-            <div id="page3-top">
-             <h4>Agenct & Venture <span>Models</span> ↵</h4>  
-             <h2>Elplore Our Service</h2>
-             <h2>& engagement models</h2> 
-            </div>
-            <div id="page3-elements">
-                <div class="box">
-                    <img src="https://images.prismic.io/rejouice/d8e1fa1f-4f24-41e1-a249-098c62df5aff_Group+46+%281%29.jpg?auto=compress,format" alt="">
-                    <video autoplay loop muted src="./assests//wh.mp4"></video>
+      <div id="page2">
+        <div id="page2-content">
+          <p>
+            Full-service agency.
+            <br />
+            Two engagement models.
+          </p>
+
+          <p>Pairs & San Diego</p>
+        </div>
+        <hr />
+        <div id="page2-main-content">
+          <p>
+            We are a digital brand accelerator. We design, develop, and scale
+            market-defining brands by unlocking their hidden potential. Choose
+            full cash compensation or offset up to 50% of our fees for equity in
+            your company. Your vision, your decision.
+          </p>
+        </div>
+      </div>
+
+      <div id="page3">
+        <div id="page3-top">
+          <h4>Agenct & Venture <span>Models</span> ↵</h4>
+          <h2>Elplore Our Service</h2>
+          <h2>& engagement models</h2>
+        </div>
+        <div id="page3-elements">
+          <div class="box">
+            <img
+              src="https://images.prismic.io/rejouice/d8e1fa1f-4f24-41e1-a249-098c62df5aff_Group+46+%281%29.jpg?auto=compress,format"
+              alt=""
+            />
+            <video autoplay loop muted src="./assests//wh.mp4"></video>
+          </div>
+          <div class="box">
+            <img
+              src="https://images.prismic.io/rejouice/e0350a3d-c390-4d97-af1a-5c86bc822b52_Group+3929.jpg?auto=compress,format"
+              alt=""
+            />
+            <video autoplay loop muted src="./assests//wh2.mp4"></video>
+          </div>
+          <div class="box">
+            <img
+              src="https://images.prismic.io/rejouice/2874f084-ec6c-4a19-b025-a55c1e6db929_Group+3692.jpg?auto=compress,format"
+              alt=""
+            />
+            <video autoplay loop muted src="./assests//wh3.mp4"></video>
+          </div>
+        </div>
+      </div>
+
+      <!-- Page 2 is repeat -->
+      <div id="page2">
+        <div id="page2-content">
+          <p>
+            Full-service agency.
+            <br />
+            Two engagement models.
+          </p>
+
+          <p>Pairs & San Diego</p>
+        </div>
+        <hr />
+        <div id="page2-main-content">
+          <p>
+            We are a digital brand accelerator. We design, develop, and scale
+            market-defining brands by unlocking their hidden potential. Choose
+            full cash compensation or offset up to 50% of our fees for equity in
+            your company. Your vision, your decision.
+          </p>
+        </div>
+      </div>
+
+      <div id="page4">
+        <video autoplay loop muted src="./assests//bgVideo.webm"></video>
+        <svg class="abs tl:0 fit transform rotate:-90deg" viewBox="0 0 100 100">
+          <circle
+            cx="50"
+            cy="50"
+            r="49"
+            stroke="#fff"
+            stroke-width="0.25"
+            fill="none"
+            class="o:0.3 dasharray:302 dashoffset:604 (.in-view):dashoffset:400 (.in-view):tween:all,2.8s,easeOutSlow"
+          ></circle>
+          <circle
+            cx="50"
+            cy="50"
+            r="49"
+            stroke="#fff"
+            stroke-width="0.25"
+            fill="none"
+            class="dasharray:302 dashoffset:302 (.in-view):dashoffset:100 (.in-view):tween:all,2.8s,easeOutSlow"
+          ></circle>
+        </svg>
+        <svg
+          class="abs tl:0 fit transform rotate:0 (.in-view):rotate:237deg (.in-view):tween:all,2.8s,easeOutSlow"
+          viewBox="0 0 100 100"
+        >
+          <circle cx="50" cy="1" r="1" fill="#fff"></circle>
+        </svg>
+      </div>
+
+      <div id="page5">
+        <div id="page5-top">
+          <h1>Get in touch.</h1>
+          <div id="swiper">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="https://images.pexels.com/photos/19487910/pexels-photo-19487910/free-photo-of-open-door-of-a-video-store.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+                    <img src="https://images.pexels.com/photos/19048044/pexels-photo-19048044/free-photo-of-wooden-house-on-pier-on-sea-shore.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+                    <img src="https://images.pexels.com/photos/19408371/pexels-photo-19408371/free-photo-of-snowy-rocky-mountain-in-landscape.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+                    <img src="https://images.pexels.com/photos/19570515/pexels-photo-19570515/free-photo-of-man-riding-a-motorbike-on-the-road-in-a-valley.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+                    <img src="https://images.pexels.com/photos/18926843/pexels-photo-18926843/free-photo-of-rough-volcanic-rock-formation.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
                 </div>
-                <div class="box">
-                    <img src="https://images.prismic.io/rejouice/e0350a3d-c390-4d97-af1a-5c86bc822b52_Group+3929.jpg?auto=compress,format" alt="">
-                    <video autoplay loop muted src="./assests//wh2.mp4"></video>
+                <div <div class="swiper-slide">
+                    <img src="https://images.pexels.com/photos/19487910/pexels-photo-19487910/free-photo-of-open-door-of-a-video-store.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+                    <img src="https://images.pexels.com/photos/19048044/pexels-photo-19048044/free-photo-of-wooden-house-on-pier-on-sea-shore.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+                    <img src="https://images.pexels.com/photos/19408371/pexels-photo-19408371/free-photo-of-snowy-rocky-mountain-in-landscape.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+                    <img src="https://images.pexels.com/photos/19570515/pexels-photo-19570515/free-photo-of-man-riding-a-motorbike-on-the-road-in-a-valley.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+                    <img src="https://images.pexels.com/photos/18926843/pexels-photo-18926843/free-photo-of-rough-volcanic-rock-formation.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
                 </div>
-                <div class="box">
-                    <img src="https://images.prismic.io/rejouice/2874f084-ec6c-4a19-b025-a55c1e6db929_Group+3692.jpg?auto=compress,format" alt="">
-                    <video autoplay loop muted src="./assests//wh3.mp4"></video>
-                </div>
+                
+                
+              </div>
+             
             </div>
+          </div>
         </div>
-
-        <!-- Page 2 is repeat -->
-        <div id="page2">
-            <div id="page2-content">
-                <p>Full-service agency.
-                    <br>
-                    Two engagement models.
-                </p>
-
-                <p>
-                    Pairs & San Diego
-                </p>
-
-            </div>
-            <hr>
-            <div id="page2-main-content">
-                <p>
-                     We are a digital brand accelerator. We design, develop, and scale market-defining brands by unlocking their hidden potential. Choose full cash compensation or offset up to 50% of our fees for equity in your company. Your vision, your decision.
-                </p>
-            </div>
-        </div>
-
-        <div id="page4">
-            <video autoplay loop muted src="./assests//bgVideo.webm"></video>
-            <svg class="abs tl:0 fit transform rotate:-90deg" viewBox="0 0 100 100">
-                <circle cx="50" cy="50" r="49" stroke="#fff" stroke-width="0.25" fill="none" class="o:0.3 dasharray:302 dashoffset:604 (.in-view):dashoffset:400 (.in-view):tween:all,2.8s,easeOutSlow "></circle>
-                <circle cx="50" cy="50" r="49" stroke="#fff" stroke-width="0.25" fill="none" class="dasharray:302 dashoffset:302 (.in-view):dashoffset:100 (.in-view):tween:all,2.8s,easeOutSlow "></circle>
-               
-            </svg>
-            <svg class="abs tl:0 fit transform rotate:0 (.in-view):rotate:237deg (.in-view):tween:all,2.8s,easeOutSlow " viewBox="0 0 100 100">
-                <circle cx="50" cy="1" r="1" fill="#fff"></circle>
-            </svg>
-            
-        </div>
-
-        <div id="page5">
-            <div id="page5-top">
-                <h1>Get in touch.</h1>
-            </div>
-        </div>
-
+      </div>
     </div>
-
-
 
     <!-- Locomotive Link it is for smooth scrolling -->
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <!-- GSAP CDN-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"
+      integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <!-- Scroll trigger -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js" integrity="sha512-OzC82YiH3UmMMs6Ydd9f2i7mS+UFL5f977iIoJ6oy07AJT+ePds9QOEtqXztSH29Nzua59fYS36knmMcv79GOg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"
+      integrity="sha512-OzC82YiH3UmMMs6Ydd9f2i7mS+UFL5f977iIoJ6oy07AJT+ePds9QOEtqXztSH29Nzua59fYS36knmMcv79GOg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Swiper cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <!-- JS linking -->
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
