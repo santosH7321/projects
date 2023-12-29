@@ -40,8 +40,26 @@ html, body{
     transform: translate(-50%, -50%);
     
 }
+#cursor2{
+    height: 7.5vw;
+    width: 7.5vw;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+    
+}
 
 #curson h5{
+    font-size: 1.2vw;
+    font-weight: 500;
+}
+#curson2 h5{
     font-size: 1.2vw;
     font-weight: 500;
 }
@@ -172,6 +190,7 @@ nav h4{
     object-fit: cover;
     object-position: center;
     transition: all linear 0.7s;
+    
 }
 
 #page3-elements .box:hover img{

@@ -1,6 +1,11 @@
 gsap.registerPlugin(ScrollTrigger);
 
 // Using Locomotive Scroll from Locomotive https://github.com/locomotivemtl/locomotive-scroll
+gsap.to("#page2", {
+    scrollTrigger: "#page2", // start animation when ".box" enters the viewport
+    x: 500,
+  });
+
 
 const locoScroll = new LocomotiveScroll({
   el: document.querySelector("#main"),
@@ -35,8 +40,10 @@ ScrollTrigger.refresh();
 
 function cursorEffect(){
     var page1Content = document.querySelector("#page1-content")
+    var page4Content = document.querySelector("#page4")
 
     var cursor = document.querySelector("#cursor")
+    var cursor2 = document.querySelector("#cursor2")
 
 page1Content.addEventListener("mousemove", function(dets){
 
@@ -44,6 +51,16 @@ page1Content.addEventListener("mousemove", function(dets){
         x: dets.x,
         y: dets.y
     })
+   
+}),
+
+page4Content.addEventListener("mousemove", function(dets){
+
+    gsap.to(cursor2, {
+        x: dets.x,
+        y: dets.y
+    })
+   
 })
 
 page1Content.addEventListener("mouseenter",function(){
@@ -51,9 +68,21 @@ page1Content.addEventListener("mouseenter",function(){
         scale:1,
         opacity:1
     })
-})
+}),
+page4Content.addEventListener("mouseenter",function(){
+    gsap.to(cursor2, {
+        scale: 1,
+        opacity: 1
+    })
+}),
 page1Content.addEventListener("mouseleave",function(){
     gsap.to(cursor, {
+        scale: 0,
+        opacity: 0
+    })
+}),
+page4Content.addEventListener("mouseleave", function(){
+    gsap.to(cursor2, {
         scale: 0,
         opacity: 0
     })
@@ -89,7 +118,9 @@ tl
         y:20
     })
     .from("#page2-main-content", {
-        delay:1,
+        delay:5,
+        scrub: 5,
+        duration: 5,
         opacity: 0,
         y: 30
     })
@@ -128,8 +159,9 @@ tl.from("#page1-content h1 span", {
     y:100,
     opacity: 0,
     stagger: 0.1,
-    duration: -0.5
+    duration: 0.5
 })
+
 tl.to("#loader",{
     display: "none"
 })
