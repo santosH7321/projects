@@ -1,8 +1,13 @@
+@font-face {
+    font-family: neu;
+    src: url("./neue-haas-grotesk-display-pro-cufonfonts/NeueHaasDisplayMediu.ttf");
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Gilroy';
+    font-family: 'neu';
 }
 
 html, body{
@@ -15,10 +20,11 @@ html, body{
     width: 100%;
     background-color: #EFEAE3;
     position: relative;
+    padding: 0 2vw;
 }
 
 nav{
-    padding: 2vw 2vw;
+    padding: 2vw 0vw;
     height: 100px;
     width: 100%;
     display: flex;
@@ -68,4 +74,26 @@ nav{
 }
 #nav-part2 h4:hover a{
     color: #fff;
+}
+
+#center{
+    height: 65vh;
+    width: 100%;
+    /* background-color: orange; */
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-bottom: 1px solid #000000;
+    padding-bottom: 2.5vw;
+}
+
+#left h3{
+    width: 25vw;
+    font-size: 1.8vw;
+    line-height: 2vw;
+}
+#center h1{
+    font-size: 10vw;
+    text-align: right;
+    line-height: 8vw;
 }
