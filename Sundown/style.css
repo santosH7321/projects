@@ -274,16 +274,15 @@ nav{
     }
 }
 #page3{
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background-color: #EFEAE3;
-    
+    padding: 4vw 0;
 }
 .elem{
     height: 150px;
     width: 100%;
     position: relative;
-    border-top: 1px solid #000;
     border-bottom: 1px solid #000;
     display: flex;
     align-items: center;
@@ -302,8 +301,24 @@ nav{
     position: absolute;
     left: 0;
     top: -100%;
-    transition: all ease 3s;
+    transition: all ease 0.2s;
 }
 .elem:hover .overlay{
     top: 0;
+}
+
+#elem-container{
+
+}
+
+#fixed-image{
+    height: 30vh;
+    width: 24vw;
+    position: fixed;
+    z-index: 99;
+    left: 50%;
+    top: 25%;
+    display: none;
+    background-size: cover;
+    background-position: center;
 }
