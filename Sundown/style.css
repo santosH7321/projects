@@ -24,7 +24,11 @@ html, body{
     height: 100%;
     width: 100%;
 }
-
+#main{
+    /* background-color: black; */
+    position: relative;
+    z-index: 10;
+}
 #page1{
     min-height: 100vh;
     width: 100%;
@@ -276,8 +280,18 @@ nav{
 #page3{
     min-height: 100vh;
     width: 100%;
-    background-color: #EFEAE3;
     padding: 4vw 0;
+}
+.page3-head{
+    display: flex;
+    gap: 5px;
+    padding: 5px;
+}
+#round{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #e24425;
 }
 .elem{
     height: 150px;
@@ -307,13 +321,11 @@ nav{
     top: 0;
 }
 
-#elem-container{
-
-}
 
 #fixed-image{
-    height: 30vh;
-    width: 24vw;
+    height: 65vh;
+    width: 25vw;
+    border-radius: 10px;
     position: fixed;
     z-index: 99;
     left: 50%;
@@ -321,4 +333,22 @@ nav{
     display: none;
     background-size: cover;
     background-position: center;
+}
+
+#page4{
+    height: 60vh;
+    width: 100%;
+    background-color: #EFEAE3;
+}
+#page5{
+    height: 60vh;
+    width: 100%;
+    background-color: #EFEAE3;
+}
+
+#footer{
+    position: fixed;
+    z-index: 9;
+    height: 60vh;
+    bottom: 0;
 }
