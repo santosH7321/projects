@@ -338,8 +338,18 @@ nav{
 #page4 {
     height: 70vh;
     width: 100%;
-    /* background-color: #EFEAE3; */
+    background-color: #EFEAE3;
     padding: 10vw 2vw;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    width: 30%;
+    border-left: 1px solid #aeadad;
+    padding: 0 2vw;
 }
 
 #page5{
