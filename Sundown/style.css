@@ -335,20 +335,47 @@ nav{
     background-position: center;
 }
 
-#page4{
-    height: 60vh;
+#page4 {
+    height: 70vh;
     width: 100%;
-    background-color: #EFEAE3;
-}
-#page5{
-    height: 60vh;
-    width: 100%;
-    background-color: #EFEAE3;
+    /* background-color: #EFEAE3; */
+    padding: 10vw 2vw;
 }
 
-#footer{
+#page5{
+    height: 100vh;
+    width: 100%;
+  
+}
+
+
+
+#footer {
     position: fixed;
+    height: 105vh;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
     z-index: 9;
-    height: 60vh;
     bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: 1vw 3vw;
+}
+
+#footer h1 {
+    font-size: 23vw;
+}
+
+#footer-div {
+    height: 20vh;
+    width: 100%;
+    background-color: red;
+}
+
+#footer-bottom {
+    border-top: 1px solid #dadada;
+    height: 10vh;
+    width: 100%;
 }
