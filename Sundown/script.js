@@ -27,3 +27,13 @@ function swiperAnimation() {
         spaceBetween: 100,
     });
 }
+
+function loaderAnimation() {
+    var loader = document.querySelector("#loader")
+    setTimeout(function () {
+        loader.style.top = "-100%"
+    }, 4200)
+}
+
+swiperAnimation()
+loaderAnimation()
