@@ -22,10 +22,14 @@ elems.forEach(function(e){
 
 function swiperAnimation() {
     var swiper = new Swiper(".mySwiper", {
-        slidesPerView: "auto",
-        centeredSlides: true,
-        spaceBetween: 100,
-    });
+        slidesPerView: 3,
+        spaceBetween: 30,
+        freeMode: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+      });
 }
 
 function loaderAnimation() {

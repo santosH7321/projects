@@ -388,21 +388,32 @@ nav{
 }
 
 #page4 {
-    height: 70vh;
+    height: 100vh;
     width: 100%;
     background-color: #EFEAE3;
-    padding: 10vw 2vw;
+    padding: 10vw 1vw;
 }
+
 .swiper {
     width: 100%;
     height: 100%;
-}
+  }
 
-.swiper-slide {
-    width: 30%;
-    border-left: 1px solid #aeadad;
-    padding: 0 2vw;
-}
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 
 #page5{
     height: 100vh;
