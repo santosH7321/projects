@@ -188,6 +188,7 @@ nav{
     width: 100%;
     padding: 8vw 0;
     position: relative;
+    background-color: #EFEAE3;
 }
 #moving-text{
     overflow-x: auto;
@@ -281,6 +282,7 @@ nav{
     min-height: 100vh;
     width: 100%;
     padding: 4vw 0;
+    background-color: #EFEAE3;
 }
 .page3-head{
     display: flex;
@@ -395,7 +397,7 @@ nav{
     /* align-items: center; */
     height: 100vh;
     width: 100%;
-    background-color: #fff; 
+    background-color: #EFEAE3; 
     padding: 10vh 5vw;
 }
 .page4-head{
@@ -413,7 +415,7 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
+    background-color: #EFEAE3;
     border-right: 1px solid black;
   }
 
@@ -432,9 +434,9 @@ nav{
 #page5{
     height: 100vh;
     width: 100%;
-  
+    position: relative;
+    z-index: 1;
 }
-
 
 
 #footer {
@@ -449,6 +451,7 @@ nav{
     justify-content: flex-end;
     flex-direction: column;
     padding: 1vw 3vw;
+    background: linear-gradient(to bottom,orangered,black);
 }
 
 #footer h1 {
@@ -458,11 +461,38 @@ nav{
 #footer-div {
     height: 20vh;
     width: 100%;
-    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.right-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 28px;
+}
+
+.left-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 20px;
+}
+.left-footer input{
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+
 }
 
 #footer-bottom {
     border-top: 1px solid #dadada;
-    height: 10vh;
+    height: 20vh;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    
 }
+
