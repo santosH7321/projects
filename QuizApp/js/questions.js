@@ -1,7 +1,7 @@
 
 let questions = [
     {
-        num: 1,
+        numb: 1,
         question: "What does HTML stand for?",
         answer: "Hyper Text Markup Language",
         options: [
@@ -12,7 +12,7 @@ let questions = [
         ]
     },
         {
-            num: 2,
+            numb: 2,
             question: "What does css stand for?",
             answer: "Cascading Style Sheet",
             options: [
@@ -24,7 +24,7 @@ let questions = [
         },
 
         {
-            num: 3,
+            numb: 3,
             question: "What does HTTP stand for?",
             answer: "HyperText Transfer Protocol",
             options: [
@@ -35,7 +35,7 @@ let questions = [
             ]
         },
         {
-            num: 4,
+            numb: 4,
             question: "What does HTTPS stand for?",
             answer: "HyperText Transfer Protocol Secure",
             options: [
@@ -46,7 +46,7 @@ let questions = [
             ]
         },
         {
-            num: 5,
+            numb: 5,
             question: "What does PHP stand for?",
             answer: "Hypertext Preprocessor",
             options: [
