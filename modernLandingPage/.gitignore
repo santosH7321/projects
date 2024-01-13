@@ -1,0 +1,14 @@
+# Ignore compiled files
+*.class
+*.jar
+*.war
+
+# Ignore build output directories
+target/
+bin/
+
+# Ignore configuration files
+config.ini
+
+# Ignore logs
+*.log
