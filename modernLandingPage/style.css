@@ -16,11 +16,15 @@ html, body{
 #main{
     width: 100%;
     height: 100vh;
-    background-color: black;
 }
 #back{
     width: 100%;
     height: 100vh;
+}
+#back img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 #top{
     pointer-events: none;
@@ -29,7 +33,6 @@ html, body{
     left: 0;
     width: 100%;
     height: 100vh;
-    background-color: black;
 }
 #workingarea{
     position: relative;
@@ -44,10 +47,10 @@ html, body{
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 40px 0;
+    padding: 20px 0;
 }
 #nav img{
-    height: 60px;
+    height: 50px;
 }
 #navleft, #navright{
     display: flex;
@@ -55,6 +58,7 @@ html, body{
     gap: 50px;
 }
 #nav a{
+    pointer-events: all;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 14px;
@@ -67,7 +71,7 @@ html, body{
     position: absolute;
     top: 50%;
     left: 0;
-    transform: translate(0%,-20%);
+    transform: translate(0,-45%);
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -78,11 +82,18 @@ html, body{
     min-width: 50%;
 }
 #heroleft .elem{
+    position: relative;
     height: 9vw;
     overflow: hidden;
     
 }
+#heroleft .elem h1:nth-child(1){
+    top: 0;
+}
 #heroleft .elem h1{
+    position: absolute;
+    top: 100%;
+    left: 0;
     line-height: .9;
     font-family: 'kajiro';
     color: white;
@@ -90,7 +101,9 @@ html, body{
     font-size: 11vw;
 }
 #heroleft button{
-    padding: .8vw 2vw;
+    pointer-events: all;
+    border-radius: 10px;
+    padding: .8vw 3vw;
     font-size: 3vw;
     margin-top: 2vw;
     font-family: 'kajiro';
@@ -101,7 +114,7 @@ html, body{
     align-items: flex-end;
     width: 17%;
     color: white;
-    /* background-color: green; */
+    
 }
 #heroright p{
     font-size: 14;
@@ -118,6 +131,3 @@ html, body{
     background-position: center;
 }
 
-#heroright p:nth-child(3){
-    color: red;
-}
