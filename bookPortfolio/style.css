@@ -16,8 +16,8 @@
     --second-text-color: #555;
     --white-color: #fff;
     --cover-color: linear-gradient(45deg, #00abf0, #006e9a);
-    --pages-color: liner-gradient(90deg, #fff, #ddd);
-    --border: .125rem solid #00abf0;
+    --pages-color: linear-gradient(90deg, #fff, #ddd);
+    --border: .125rem solid #00abf0; 
     --box-shadow: 0 0 .6rem rgba(0,0,0,.2);
 }
 
@@ -32,8 +32,8 @@ body{
 .wrapper {
     position: relative;
     width: 66rem;
-    height: 445rem;
-    background: red;
+    height: 45rem;
+    
 }
 
 .cover {
@@ -44,4 +44,12 @@ body{
     box-shadow: var(--box-shadow);
     border-top-left-radius: .6rem;
     border-bottom-left-radius: .6rem;
+    transform-origin: right;
+}
+
+.cover.cover-right.turn {
+    transform: rotateY(180deg);
+}
+.cover .cover-left{
+    z-index: 1;
 }
