@@ -22,7 +22,10 @@ continue_btn.onclick = () => {
   quiz_box.classList.add("activeQuiz");
   showQuestion(0);
   startTimer(15);
+  startTimerLine(0);
+  quesCounter(1);
 };
+
 function showQuestion(index) {
   const que_text = document.querySelector(".que_text");
   let que_tag =
@@ -56,14 +59,15 @@ function showQuestion(index) {
 
   }
 
+}
 
-  
   let que_count = 0;
   let counter;
-
+  let counterLine;
   const next_btn = document.querySelector("footer .next_btn");
   let tickIconTag = '<div class="icon tick"><i class="fa-solid fa-check"></i></div>';
   let CrossIconTag = '<div class="icon cross><i class="fa-solid fa-circle-xmark"></i></div>';
+  let bottom_ques_counter = document.querySelector("footer .total_que");
 
   function startTimer(time){
     counter = setInterval(time, 1000);
@@ -81,6 +85,7 @@ function showQuestion(index) {
         timeText.textContent = "Time off";
         const alloptions = option_list.children.length;
         let correctAns = questions[que_count].answer;
+
         for(i = 0; i<alloptions; i++){
           if(option_list.children[i].textContent == correctAns){
             option_list.children[i].setAttribute("class", "option correct");
@@ -98,4 +103,22 @@ function showQuestion(index) {
       }
     }
   }
-}
+
+  function startTimerLine(time){
+    counterLine = setInterval(timer, 29);
+    function time(){
+      time += 1;
+      time_line.style.width = time + "px";
+      if(time>549){
+        clearInterval(counterLine);
+      }
+    }
+  }
+
+  function quesCounter(index){
+    let totalQuesCountTag = '<span><p>' +index+ '</p> of <p>' + questions.length+'</p> Questions </span>';
+    bottom_ques_counter.innerHTML = totalQuesCountTag;
+  }
+
+
+
