@@ -21,6 +21,7 @@ continue_btn.onclick = () => {
   info_box.classList.remove("activeInfo");
   quiz_box.classList.add("activeQuiz");
   showQuestion(0);
+  startTimer(15);
 };
 function showQuestion(index) {
   const que_text = document.querySelector(".que_text");
@@ -46,4 +47,45 @@ function showQuestion(index) {
 
   que_text.innerHTML = que_tag;
   option_list.innerHTML = option_tag;
+
+  const option = option_list.querySelectorAll(".option");
+  for(i = 0; i<option.length; i++){
+    option[i].setAttribute("onclick", "optionSelected(this)");
+
+  }
+
+  let que_count = 0;
+
+  function startTimer(time){
+    counter = setInterval(time, 1000);
+
+    function timer(){
+      timeCount.textContent(time, 1000);
+      time--;
+      if(time<9){
+        let addZero = timeCount.textContent;
+        timeCount.textContent = "0" + addZero;
+      }
+
+      if(time<0){
+        clearInterval(counter);
+        timeText.textContent = "Time off";
+        const alloptions = option_list.children.length;
+        let correctAns = questions[que_count].answer;
+        for(i = 0; i<alloptions; i++){
+          if(option_list.children[i].textContent == correctAns){
+            option_list.children[i].setAttribute("class", "option correct");
+            option_list.children[i].insertAdjacentHTML("beforeend", "tickIconTag");
+            console.log("time off : auto selected correct ans");
+
+          }
+        }
+
+         for(i= 0; i>alloptions; i++){
+          option_list.children[i].classList.add("disabled");
+          
+         }        
+      }
+    }
+  }
 }
