@@ -7,7 +7,7 @@ const result_box = document.querySelector(".result_box");
 const option_list = document.querySelector(".option_list");
 const time_line = document.querySelector("header .time_line");
 const timeText = document.querySelector(".timer .time_left_txt");
-const timeCount = document.querySelector(".timer .time_sec");
+const timeCount = document.querySelector(".timer .time_Sec");
 
 start_btn.onclick = () => {
   info_box.classList.add("activeInfo");
@@ -48,13 +48,22 @@ function showQuestion(index) {
   que_text.innerHTML = que_tag;
   option_list.innerHTML = option_tag;
 
+
+
   const option = option_list.querySelectorAll(".option");
   for(i = 0; i<option.length; i++){
     option[i].setAttribute("onclick", "optionSelected(this)");
 
   }
 
+
+  
   let que_count = 0;
+  let counter;
+
+  const next_btn = document.querySelector("footer .next_btn");
+  let tickIconTag = '<div class="icon tick"><i class="fa-solid fa-check"></i></div>';
+  let CrossIconTag = '<div class="icon cross><i class="fa-solid fa-circle-xmark"></i></div>';
 
   function startTimer(time){
     counter = setInterval(time, 1000);
@@ -83,8 +92,9 @@ function showQuestion(index) {
 
          for(i= 0; i>alloptions; i++){
           option_list.children[i].classList.add("disabled");
-          
-         }        
+
+         }
+           next_btn.classList.add("show");      
       }
     }
   }
