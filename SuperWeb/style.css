@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: fright;
+}
+
+#page1 {
+  height: 100vh;
+  width: 100%;
+  background-color: #f5e41b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#page1 h1 {
+  font-size: 6vw;
+  line-height: 6vw;
+}
+#page2 {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+}
+#page3 {
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+}
