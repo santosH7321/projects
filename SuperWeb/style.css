@@ -1,7 +1,12 @@
+@font-face {
+  font-family: forBig;
+  src: url('./fonts/FreightBigProBlack-Italic.eot');
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: forBig;
 }
 
 html,
@@ -11,6 +16,40 @@ body {
   font-family: fright;
 }
 
+#loader{
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  position: fixed;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* display: none; */
+}
+#loader h1 {
+  font-size: 6.9vw;
+  line-height: 6vw;
+  font-weight: 100;
+  letter-spacing: -3px;
+  position: relative;
+  z-index: 9;
+}
+#loader video{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  object-fit: cover;
+  z-index: 7;
+}
+#yellow{
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  background-color: #F5E41B;
+  z-index: 8;
+}
 #page1 {
   height: 100vh;
   width: 100%;
@@ -21,8 +60,10 @@ body {
   text-align: center;
 }
 #page1 h1 {
-  font-size: 6vw;
+  font-size: 6.9vw;
   line-height: 6vw;
+  font-weight: 100;
+  letter-spacing: -3px;
 }
 #page2 {
   height: 100vh;
