@@ -1,6 +1,6 @@
 @font-face {
   font-family: forBig;
-  src: url('./fonts/FreightBigProBlack-Italic.eot');
+  src: url("./fonts/FreightBigProBlack-Italic.eot");
 }
 * {
   margin: 0;
@@ -15,8 +15,10 @@ body {
   width: 100%;
   font-family: fright;
 }
-
-#loader{
+#mani{
+  background-color: #000;
+}
+#loader {
   height: 100vh;
   width: 100%;
   background-color: black;
@@ -26,6 +28,7 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
+  z-index: 99;
   /* display: none; */
 }
 #loader h1 {
@@ -36,19 +39,36 @@ body {
   position: relative;
   z-index: 9;
 }
-#loader video{
+#loader video {
   height: 100%;
   width: 100%;
   position: absolute;
   object-fit: cover;
-  z-index: 7;
+  z-index: 6;
 }
-#yellow{
+#yellow1 {
   height: 100%;
   position: absolute;
   width: 100%;
-  background-color: #F5E41B;
+  background-color: #f5e41b;
+  z-index: 7;
+}
+#yellow2 {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  background-color: #f5e41b;
   z-index: 8;
+}
+#nav {
+  position: absolute;
+  width: 100%;
+  padding: 30px 50px;
+  /* background-color: red; */
+  z-index: 10;
+}
+#nav svg path {
+  fill: #000;
 }
 #page1 {
   height: 100vh;
