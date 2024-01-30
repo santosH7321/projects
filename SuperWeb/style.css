@@ -29,7 +29,7 @@ body {
   justify-content: center;
   text-align: center;
   z-index: 99;
-  /* display: none; */
+  display: none;
 }
 #loader h1 {
   font-size: 6.9vw;
@@ -89,7 +89,76 @@ body {
   height: 100vh;
   width: 100%;
   background-color: black;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
 }
+#elem{
+  /* background-color: red; */
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+}
+#elem h2{
+  font-size: 6.5vw;
+  text-transform: uppercase;
+  font-weight: 100;
+  position: relative;
+  line-height: 5vw;
+  z-index: 9;
+}
+#elem .moving{
+  background-color: #F5E41B;
+  width: 100%;
+  white-space: nowrap;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -45%) scaleY(0);
+  padding: 8px 0;
+  transition: all ease 0.3s;
+}
+
+#elem .moving .moving-in{
+  display: inline-block;
+  white-space: nowrap;
+  animation-name: moving;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+#elem .moving .moving-in h5{
+  color: #000;
+  display: inline-block;
+  transition: all ease 0.3s;
+  transition-delay: 0.2s;
+  opacity: 0;
+  font-size: 19px;
+  text-transform: uppercase;
+  margin-right: 30px;
+  font-weight: 500;
+}
+
+@keyframes moving {
+  from{
+    transform: translate(0);
+  }  
+  to{
+      transform: translate(-100%);
+  }
+}
+
+#elem:hover .moving{
+  transform: translate(0, -45%) scaleY(1);
+} 
+#elem:hover .moving h5{
+  opacity: 1;
+} 
+
+
 #page3 {
   height: 100vh;
   width: 100%;
