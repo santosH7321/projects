@@ -41,3 +41,12 @@ const scroll = new LocomotiveScroll({
   el: document.querySelector("#main"),
   smooth: true,
 });
+
+var elems = document.querySelectorAll("#elem")
+var main = document.querySelector("#main")
+elems.forEach(function(ele){
+    ele.addEventListener("mouseenter", function(){
+      var bgImag = ele.getAttribute("data-img")
+      main.style.backgroundImage = `url(${bgImag})`
+    })
+})

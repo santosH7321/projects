@@ -13,9 +13,9 @@ html,
 body {
   height: 100%;
   width: 100%;
-  font-family: fright;
+  font-family: forBig;
 }
-#mani{
+#main{
   background-color: #000;
 }
 #loader {
@@ -29,7 +29,7 @@ body {
   justify-content: center;
   text-align: center;
   z-index: 99;
-  display: none;
+  /* display: none; */
 }
 #loader h1 {
   font-size: 6.9vw;
@@ -64,7 +64,6 @@ body {
   position: absolute;
   width: 100%;
   padding: 30px 50px;
-  /* background-color: red; */
   z-index: 10;
 }
 #nav svg path {
@@ -88,7 +87,7 @@ body {
 #page2 {
   height: 100vh;
   width: 100%;
-  background-color: black;
+  /* background-color: black; */
   color: #fff;
   display: flex;
   justify-content: center;
@@ -97,10 +96,20 @@ body {
   flex-direction: column;
 }
 #elem{
-  /* background-color: red; */
   width: 100%;
   position: relative;
   cursor: pointer;
+}
+#elem .blur{
+  position: absolute;
+  width: 35%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(to right, #F5E41B,#F5E41B,#F5E41B);
+  box-shadow: 10px 0px 20px 20px #F5E41B, -10px 0px 20px 20px #F5E41B;
+  height: 100%;
+  z-index: 8;
 }
 #elem h2{
   font-size: 6.5vw;
@@ -113,6 +122,7 @@ body {
 #elem .moving{
   background-color: #F5E41B;
   width: 100%;
+  overflow: hidden;
   white-space: nowrap;
   position: absolute;
   top: 50%;
@@ -136,7 +146,7 @@ body {
   transition: all ease 0.3s;
   transition-delay: 0.2s;
   opacity: 0;
-  font-size: 19px;
+  font-size: 17px;
   text-transform: uppercase;
   margin-right: 30px;
   font-weight: 500;
