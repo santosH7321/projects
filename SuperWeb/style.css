@@ -7,6 +7,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: forBig;
+  text-decoration: none;
 }
 
 html,
@@ -60,7 +61,10 @@ body {
   background-color: #f5e41b;
   z-index: 8;
 }
+
 #nav {
+  display: flex;
+  justify-content: space-between;
   position: absolute;
   width: 100%;
   padding: 30px 50px;
@@ -69,11 +73,25 @@ body {
 #nav svg path {
   fill: #000;
 }
+#nav-right{
+  display: flex;
+  gap: 4vw;
+  list-style: none;
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+
+}
+#nav-right li>a{
+  color: #000;
+  text-transform: uppercase;
+}
 #page1 {
   height: 100vh;
   width: 100%;
   background-color: #f5e41b;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -186,9 +204,9 @@ body {
 }
 
 .image-div{
-  height: 40vw;
+  border-radius: 10px;
+  overflow: hidden;
   width: 30vw;
-  background-color: red;
   position: relative;
   overflow: hidden;
   margin: 30px 10px;
@@ -242,7 +260,7 @@ body {
   align-items: center;
   justify-content: flex-end;
   flex-direction: column;
-  gap: 40px;
+  gap: 20px;
 }
 #footer #foot{
   height: 50%;
@@ -254,4 +272,11 @@ body {
   text-transform: uppercase;
   font-size: 1vw;
   cursor: pointer;
+}
+#foot{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 16px;
 }
