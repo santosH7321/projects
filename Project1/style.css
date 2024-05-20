@@ -54,9 +54,9 @@ body{
 
 }
 
-.header .sticky{
-    background: var(--bg-color);
-    box-sizing: 0 .1rem 1rem var(--shadow-color);
+.header{
+    background: skyblue;
+    /* box-sizing: 0 .1rem 1rem var(--shadow-color); */
 
 }
 
@@ -241,6 +241,7 @@ section{
     font-size: 3.2rem;
     line-height: 1;
     font-weight: 600;
+   
 }
 
 .home .profession-box .circle{
