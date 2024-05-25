@@ -43,10 +43,43 @@
     font-weight: 900;
 }
 .line h2{
-    font-size: 6.5vw;
+    font-size: 6vw;
     text-transform: uppercase;
     font-weight: 900;
-   
+    opacity: 0;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anime {
+    0%{
+        font-family: "plane light";
+        -webkit-text-stroke: 1px #fff;
+        color: #fff;
+        font-weight: 500;
+        opacity: 1;
+    }
+    47%{
+        font-family: "plane light";
+        -webkit-text-stroke: 1px #fff;
+        color: #fff;
+        font-weight: 500;
+        opacity: 0;
+    }
+    50%{
+        font-family: "silk serif";
+        -webkit-text-stroke: 1px #fff;
+        color:transparent;
+        font-weight: 500;
+        opacity: 1;
+    }
+    100%{
+        font-family: "silk serif";
+        -webkit-text-stroke: 1px #fff;
+        color:transparent;
+        font-weight: 500;
+        opacity: 0;
+    }
 }
 
 html, body{
@@ -55,7 +88,7 @@ html, body{
 }
 #main{
     position: relative;
-    background-color: #111;
+    background-color: #003;
 }
 #page1{
     height: 100vh;
