@@ -1,9 +1,29 @@
+@font-face {
+    font-family: 'plain light';
+    src: url('./plain-light-webfont.ttf');
+}
+
+
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Plain Light"; 
+    font-family: "plain light"; 
     color: #fff;
+}
+
+#crsr{
+    height: 2.3vw;
+    width: 2.3vw;
+    border-radius: 50%;
+    /* background-color: white; */
+    position: fixed;
+    z-index: 99;
+    border: 2px solid #ffffffd1;
+    mix-blend-mode: difference;
+    transform: translate(-50%, -50%);
 }
 #loadder{
     height: 100%;
@@ -50,6 +70,9 @@
     animation-duration: 2s;
     animation-iteration-count: infinite;
 }
+.line h4{
+    margin-top: 5px;
+}
 
 @keyframes anime {
     0%{
@@ -94,4 +117,39 @@ html, body{
     height: 100vh;
     width: 100%;
     background-color: #151515;
+}
+#page1 #nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.3vw 5.5vw;
+}
+
+#nav-part2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+    
+}
+#nav-part2 h4{
+    font-size: 1vw;
+    font-weight: 700;
+}
+
+.hero{
+    /* background-color: red;  */
+    width: 72%;
+    margin-left: 27%;
+}
+ 
+.hero:nth-child(2){
+    margin-top: 18vh;
+}
+
+.hero h1{
+    font-size: 7vw;
+    text-transform: uppercase;
+    line-height: 7vw;
+    font-weight: 600;
 }
